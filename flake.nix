@@ -162,6 +162,7 @@
               nvim-nio
               nvim-dap-go
               nvim-dap-ui
+              smear-cursor-nvim
             ];
             oil = with pkgs.vimPlugins; [
               oil-nvim
