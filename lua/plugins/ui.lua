@@ -34,7 +34,6 @@ return {
 		dependencies = { { "echasnovski/mini.icons" } },
 		enabled = require("nixCatsUtils").enableForCategory("ui"),
 		opts = {
-			theme = "lackluster",
 			options = {
 				component_separators = " ",
 				section_separators = { left = "", right = "" },
@@ -167,6 +166,130 @@ return {
 		"folke/trouble.nvim",
 		opts = {},
 		cmd = "Trouble",
-		keys = {},
+		keys = {
+			{
+				"<leader>xx",
+				"<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+				desc = "Buffer Diagnostics(trouble)",
+			},
+			{
+				"<leader>xX",
+				"<cmd>Trouble diagnostics toggle<cr>",
+				desc = "Root Diagnostics(trouble)",
+			},
+			{
+				"]d",
+				"<cmd>Trouble diagnostics next jump=true<cr>",
+				desc = "Trouble diagnostics next",
+			},
+			{
+				"[d",
+				"<cmd>Trouble diagnostics prev jump=true<cr>",
+				desc = "Trouble diagnostics prev",
+			},
+		},
+	},
+	{
+		"theprimeagen/harpoon",
+		version = "harpoon2",
+		config = function()
+			require("harpoon").setup({})
+		end,
+		keys = {
+			{
+				"<leader>a",
+				function()
+					require("harpoon"):list():add()
+				end,
+				mode = "n",
+				desc = "Add current file to harpoon",
+			},
+			{
+				"<leader>hd",
+				function()
+					require("harpoon"):list():remove()
+				end,
+				mode = "n",
+				desc = "Delete current file from harpoon",
+			},
+			{
+				"<leader>al",
+				function()
+					local harpoon = require("harpoon")
+					harpoon.ui:toggle_quick_menu(harpoon:list())
+				end,
+				mode = "n",
+				desc = "Open harpoon list",
+			},
+
+			{
+				"<leader>1",
+				function()
+					require("harpoon"):list():select(1)
+				end,
+				mode = "n",
+				desc = "Open harpoon 1",
+			},
+			{
+				"<leader>2",
+				function()
+					require("harpoon"):list():select(2)
+				end,
+				mode = "n",
+				desc = "Open harpoon 2",
+			},
+			{
+				"<leader>3",
+				function()
+					require("harpoon"):list():select(3)
+				end,
+				mode = "n",
+				desc = "Open harpoon 3",
+			},
+			{
+				"<leader>4",
+				function()
+					require("harpoon"):list():select(4)
+				end,
+
+				mode = "n",
+				desc = "Open harpoon 4",
+			},
+			{
+				"<leader>acc",
+				function()
+					require("harpoon"):list():clear()
+				end,
+				mode = "n",
+				desc = "Clear harpoon",
+			},
+		},
+	},
+	{
+		"folke/flash.nvim",
+		opts = {},
+		keys = {
+			{
+				"zk",
+				function()
+					require("flash").jump()
+				end,
+				mode = { "n", "x", "o" },
+				desc = "Jump using flash.nvim",
+			},
+			{
+				"zj",
+				function()
+					require("flash").treesitter()
+				end,
+				mode = { "n", "x", "o" },
+				desc = "Treesitter symbols using flash.nvim",
+			},
+		},
+	},
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		opts = {},
 	},
 }

@@ -128,6 +128,7 @@
               luarocks
               nixfmt-rfc-style
               isort
+
             ];
           };
 
@@ -146,13 +147,21 @@
               telescope-nvim
               nvim-ts-autotag
               nvim-autopairs
-              lackluster-nvim
-              zenbones-nvim
-              oxocarbon-nvim
               flash-nvim
               trouble-nvim
               conform-nvim
               mini-surround
+              gruvbox
+              kanagawa-nvim
+              {
+                plugin = harpoon2;
+                name = "harpoon";
+              }
+              which-key-nvim
+              nvim-dap
+              nvim-nio
+              nvim-dap-go
+              nvim-dap-ui
             ];
             oil = with pkgs.vimPlugins; [
               oil-nvim

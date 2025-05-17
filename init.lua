@@ -30,7 +30,7 @@ local lazyOptions = {
 		},
 	},
 	install = {
-		colorscheme = { "lackluster" },
+		colorscheme = { "kanagawa-wave" },
 	},
 }
 
