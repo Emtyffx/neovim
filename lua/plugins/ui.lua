@@ -5,7 +5,9 @@ return {
 			{ "echasnovski/mini.icons" },
 		},
 		cmd = "Oil",
-		opts = {},
+		opts = {
+			view_options = { show_hidden = true },
+		},
 		enabled = require("nixCatsUtils").enableForCategory("oil"),
 		keys = {
 			{ "-", "<cmd>Oil --float<cr>", desc = "Open oil(float)" },
@@ -36,7 +38,7 @@ return {
 		opts = {
 			options = {
 				component_separators = " ",
-				section_separators = { left = "", right = "" },
+				section_separators = { left = "", right = "" },
 			},
 		},
 	},

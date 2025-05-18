@@ -15,12 +15,11 @@ return {
 	-- 	end,
 	-- },
 	{
-		"zenbones-theme/zenbones.nvim",
+		"rebelot/kanagawa.nvim",
 		priority = 1000,
 		lazy = false,
-		dependencies = "rktjmp/lush.nvim",
 		config = function()
-			vim.cmd("colorscheme zenbones")
+			vim.cmd("colorscheme kanagawa-wave")
 		end,
 	},
 }
