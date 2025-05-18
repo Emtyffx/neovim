@@ -163,6 +163,7 @@
               nvim-dap-go
               nvim-dap-ui
               smear-cursor-nvim
+              nvim-colorizer-lua
             ];
             oil = with pkgs.vimPlugins; [
               oil-nvim

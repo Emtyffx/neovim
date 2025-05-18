@@ -296,4 +296,8 @@ return {
 		"sphamba/smear-cursor.nvim",
 		opts = {},
 	},
+	{
+		"catgoose/nvim-colorizer.lua",
+		opts = {},
+	},
 }
