@@ -146,6 +146,7 @@
               lazydev-nvim
               telescope-nvim
               nvim-ts-autotag
+              nvim-ts-context-commentstring
               nvim-autopairs
               flash-nvim
               trouble-nvim
