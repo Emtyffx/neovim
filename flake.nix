@@ -154,6 +154,7 @@
               mini-surround
               gruvbox
               kanagawa-nvim
+              luasnip
               {
                 plugin = harpoon2;
                 name = "harpoon";
