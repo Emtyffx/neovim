@@ -10,7 +10,6 @@ vim.keymap.set("n", "<leader>wv", "<cmd>vsplit<CR>", { desc = "Vertical split" }
 
 -- diagnostic
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Current error" })
-vim.keymap.set("n", "ggd", vim.lsp.buf.declaration)
 
 -- exit highlighting on search
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
