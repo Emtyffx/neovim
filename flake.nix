@@ -128,7 +128,7 @@
               luarocks
               nixfmt-rfc-style
               isort
-
+              rust-analyzer
             ];
           };
 
