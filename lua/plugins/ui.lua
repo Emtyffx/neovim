@@ -270,6 +270,9 @@ return {
 	{
 		"folke/flash.nvim",
 		opts = {},
+		config = function(_, opts)
+			require("flash").setup(opts)
+		end,
 		keys = {
 			{
 				"zk",
