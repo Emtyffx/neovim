@@ -125,6 +125,7 @@
               gopls
               prettierd
               vue-language-server
+              bash-language-server
               luarocks
               nixfmt-rfc-style
               isort
@@ -149,6 +150,7 @@
               nvim-ts-context-commentstring
               nvim-autopairs
               flash-nvim
+              vim-fugitive
               trouble-nvim
               conform-nvim
               mini-surround

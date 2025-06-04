@@ -71,4 +71,50 @@ return {
 	{
 		"L3MON4D3/LuaSnip",
 	},
+	{
+		"tpope/vim-fugitive",
+		command = "Git",
+		config = function() end,
+		keys = {
+			{
+				"<leader>gs",
+				vim.cmd.Git,
+				desc = "[G]it",
+			},
+			{
+				"<leader>gp",
+				"<cmd>Git push<cr>",
+				desc = "[G]it [P]ush",
+			},
+			{
+				"<leader>gP",
+				"<cmd>Git pull --rebase<cr>",
+				desc = "[G]it [P]ush",
+			},
+			{
+				"<leader>go",
+				":Git push -u origin ",
+				desc = "[G]it [O]rigin push",
+			},
+			{
+				"<leader>gc",
+
+				function()
+					vim.ui.input({ prompt = "Enter commit message(empty if no message): " }, function(input)
+						if input and input ~= "" then
+							vim.cmd('Git commit -m "' .. input .. '"')
+						else
+							vim.cmd("Git commit")
+						end
+					end)
+				end,
+				desc = "[G]it [C]ommit",
+			},
+			{
+				"<leader>ga",
+				"<cmd>Git add --all<cr>",
+				desc = "[G]it [A]dd All",
+			},
+		},
+	},
 }
