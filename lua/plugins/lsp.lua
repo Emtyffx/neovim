@@ -191,7 +191,7 @@ return {
 			local servers = {}
 			servers.clangd = {}
 			servers.gopls = {}
-			servers.pyright = {}
+			servers.pylsp = {}
 			servers.cssls = {}
 			servers.tailwindcss = {}
 			servers.vuels = {}
