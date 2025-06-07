@@ -119,9 +119,7 @@
               typescript-language-server
               vtsls
               clang-tools
-              python312
-              python312Packages.python-lsp-server
-
+              pyright
               vscode-langservers-extracted
               tailwindcss-language-server
               gopls
