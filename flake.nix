@@ -144,6 +144,7 @@
               nvim-treesitter.withAllGrammars
               blink-cmp
               fidget-nvim
+              vim-hexokinase
               lazydev-nvim
               telescope-nvim
               nvim-ts-autotag
@@ -161,6 +162,7 @@
                 plugin = harpoon2;
                 name = "harpoon";
               }
+              nvim-colorizer-lua
               which-key-nvim
               nvim-dap
               nvim-nio

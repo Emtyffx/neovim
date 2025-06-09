@@ -303,6 +303,13 @@ return {
 	},
 	{
 		"catgoose/nvim-colorizer.lua",
-		opts = {},
+		event = "BufReadPre",
+		config = function()
+			require("colorizer").setup({
+				user_default_options = {
+					mode = "virtualtext",
+				},
+			})
+		end,
 	},
 }
