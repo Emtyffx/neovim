@@ -312,4 +312,6 @@ return {
 			})
 		end,
 	},
+
+	"ThePrimeagen/vim-be-good",
 }
