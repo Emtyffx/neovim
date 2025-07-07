@@ -143,6 +143,7 @@
               playground
               nvim-treesitter.withAllGrammars
               blink-cmp
+              rust-vim
               fidget-nvim
               rustaceanvim
               vim-hexokinase
