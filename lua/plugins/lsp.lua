@@ -283,4 +283,8 @@ return {
 			end
 		end,
 	},
+	{
+		"mrcjkb/rustaceanvim",
+		lazy = false,
+	},
 }

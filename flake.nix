@@ -144,6 +144,7 @@
               nvim-treesitter.withAllGrammars
               blink-cmp
               fidget-nvim
+              rustaceanvim
               vim-hexokinase
               lazydev-nvim
               telescope-nvim
