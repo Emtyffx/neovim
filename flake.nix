@@ -171,6 +171,7 @@
               smear-cursor-nvim
               nvim-colorizer-lua
               vim-be-good
+              cmake-tools-nvim
             ];
             oil = with pkgs.vimPlugins; [
               oil-nvim
